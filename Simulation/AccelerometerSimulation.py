@@ -3,19 +3,6 @@ import pybullet as p
 import pybullet_data
 import time
 from math import pi, atan2, sqrt
-import socket
-import sys
-from struct import unpack
-
-# Create a UDP socket
-sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-
-# Bind the socket to the port
-host, port = '0.0.0.0', 65000
-server_address = (host, port)
-
-print(f'Starting UDP server on {host} port {port}')
-sock.bind(server_address)
 
 #set environment
 p.connect(p.GUI) # gives visualisation
